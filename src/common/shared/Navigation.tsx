@@ -24,7 +24,7 @@ const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
 	},
 	[theme.breakpoints.up('md')]: {
 		width: '100%',
-		maxWidth: '1280px',	
+		maxWidth: '1280px',
 		margin: '0 auto',
 	},
 }));
@@ -49,7 +49,7 @@ export default function Navbar() {
 						</i>
 					</Link>
 				</Box>
-				<Box display='flex' sx={{ gap: { xs: 'none', sm: '12px' } }}>
+				<Box display='flex' sx={{ gap: { xs: '12px', sm: '12px' } }}>
 					<Button
 						variant='outlined'
 						sx={{
@@ -104,6 +104,7 @@ export default function Navbar() {
 							borderRadius: '4px',
 
 							padding: '12px 10px',
+
 							display: { xs: 'flex', md: 'flex' },
 						}}
 					>
