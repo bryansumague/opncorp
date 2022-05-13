@@ -85,9 +85,7 @@ const InputFields = () => {
 			<TextField
 				fullWidth
 				sx={{
-					'&:hover': {
-						outline: 'none',
-					},
+					color: '#000000',
 				}}
 				variant='outlined'
 				placeholder='Search here...'
@@ -96,7 +94,7 @@ const InputFields = () => {
 				<Button
 					variant='contained'
 					color='secondary'
-					sx={{ position: 'absolute', right: 0 }}
+					sx={{ position: 'absolute', right: 0, bottom: 0, top: 0 }}
 				>
 					<span style={{ marginTop: '10px' }}>
 						<i>
@@ -131,8 +129,22 @@ const InputFields = () => {
 
 function Headline() {
 	return (
-		<>
-			<Box sx={{ my: 4, display: { xs: 'block', sm: 'block', md: 'none' } }}>
+		<Box
+			sx={{
+				background:
+					'linear-gradient(180deg, #FFFFFF 14.32%, rgba(227, 248, 255, 0.15) 27.6%, #FFFFFF 75.52%, #FFFFFF 100%)',
+			}}
+		>
+			<Box
+				sx={{
+					my: 4,
+					display: {
+						xs: 'block',
+						sm: 'block',
+						md: 'none',
+					},
+				}}
+			>
 				<Box sx={{ display: { xs: 'block', sm: 'none' } }}>
 					<HeadingMobile />
 				</Box>
@@ -145,7 +157,13 @@ function Headline() {
 
 				<VectorArt />
 			</Box>
-			<Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
+			<Box
+				sx={{
+					display: { xs: 'none', sm: 'none', md: 'block' },
+					background:
+						'linear-gradient(180deg, #FFFFFF 14.32%, rgba(227, 248, 255, 0.15) 27.6%, #FFFFFF 75.52%, #FFFFFF 100%)',
+				}}
+			>
 				<Stack
 					direction='row'
 					justifyContent='space-between'
@@ -169,7 +187,7 @@ function Headline() {
 					</Box>
 				</Stack>
 			</Box>
-		</>
+		</Box>
 	);
 }
 

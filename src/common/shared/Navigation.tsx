@@ -23,8 +23,8 @@ const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
 		margin: '0 auto',
 	},
 	[theme.breakpoints.up('md')]: {
-		display: 'flex',
-		width: '98%',
+		width: '100%',
+		maxWidth: '1280px',	
 		margin: '0 auto',
 	},
 }));
@@ -35,8 +35,10 @@ export default function Navbar() {
 			position='sticky'
 			color={'primary'}
 			sx={{
-				background: '#ffffff',
+				width: '100%',
+				margin: '0 auto',
 				boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.06)',
+				display: 'flex',
 			}}
 		>
 			<ToolbarStyled>
@@ -47,11 +49,7 @@ export default function Navbar() {
 						</i>
 					</Link>
 				</Box>
-				<Box
-					display='flex'
-					justifyContent='flex-end'
-					sx={{ gap: { xs: 'none', sm: '12px' } }}
-				>
+				<Box display='flex' sx={{ gap: { xs: 'none', sm: '12px' } }}>
 					<Button
 						variant='outlined'
 						sx={{
@@ -123,16 +121,6 @@ export default function Navbar() {
 							Get Started
 						</Typography>
 					</Button>
-					<IconButton
-						size='large'
-						edge='start'
-						color='default'
-						aria-label='menu'
-						title='Login'
-						sx={{ mr: 0, ml: 1 }}
-					>
-						{/* <LockOutlinedIcon sx={{ display: { xs: 'flex', md: 'none' } }} /> */}
-					</IconButton>
 					<Drawerbar />
 				</Box>
 			</ToolbarStyled>

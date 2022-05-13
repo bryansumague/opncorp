@@ -7,9 +7,9 @@ const GridBox = styled(Box)(({ theme }) => ({
 	flexDirection: 'column',
 	justifyContent: 'center',
 	alignItems: 'center',
-	border: '1px solid #eeeeee',
-	background: '#ffffff',
 	borderRadius: '8px',
+	background:
+		'linear-gradient(180deg, #FFFFFF 14.32%, rgba(227, 248, 255, 0.15) 27.6%, #FFFFFF 75.52%, #FFFFFF 100%)',
 	boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.07)',
 	padding: '0.5rem',
 	width: '100%',

@@ -49,13 +49,13 @@ const theme = createTheme({
 						fontSize: '1rem',
 						'& .MuiOutlinedInput-root': {
 							'& > fieldset': {
-								borderColor: '#eeeeee',
+								borderColor: '#2752E7',
 								borderRadius: '10px',
 							},
 						},
-						'& .MuiOutlinedInput-root:focus': {
+						'& .MuiOutlinedInput-root:hover': {
 							'& > fieldset': {
-								borderColor: 'none',
+								borderColor: '#2752E7',
 								borderRadius: '10px',
 							},
 						},

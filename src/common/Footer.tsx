@@ -313,12 +313,11 @@ const SocialIcon = () => {
 
 function Footer() {
 	return (
-		<>
+		<Box sx={{ background: '#ffffff' }}>
 			<Box
 				sx={{
 					display: { xs: 'flex', sm: 'none' },
 					flexDirection: 'column',
-					background: '#ffffff',
 				}}
 			>
 				<Finances />
@@ -454,7 +453,7 @@ function Footer() {
 					Copyright @ OPNCORP2022. All Rights Reserved.
 				</Typography>
 			</Box>
-		</>
+		</Box>
 	);
 }
 

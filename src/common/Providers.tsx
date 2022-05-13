@@ -3,7 +3,12 @@ import { Box, Grid, Typography } from '@mui/material';
 
 function ProviderServices() {
 	return (
-		<>
+		<Box
+			sx={{
+				background:
+					'linear-gradient(180deg, #FFFFFF 14.32%, rgba(227, 248, 255, 0.15) 27.6%, #FFFFFF 75.52%, #FFFFFF 100%)',
+			}}
+		>
 			<Box
 				sx={{
 					display: { sm: 'block', md: 'flex' },
@@ -167,7 +172,7 @@ function ProviderServices() {
 					</i>
 				</Box>
 			</Box>
-		</>
+		</Box>
 	);
 }
 
