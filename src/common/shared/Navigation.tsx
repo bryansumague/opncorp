@@ -69,12 +69,16 @@ export default function Navbar({ isVisibility }: Props) {
 							fullWidth
 							sx={{
 								color: '#000000',
+								'& .MuiOutlinedInput-root': {
+									'& > fieldset': { borderColor: 'transparent' },
+								},
 							}}
-							variant='outlined'
 							placeholder='Search here...'
 							InputProps={{
 								style: {
 									height: '48px',
+									background: '#F7F7F7',
+									borderRadius: '2px',
 								},
 							}}
 						/>
@@ -88,6 +92,7 @@ export default function Navbar({ isVisibility }: Props) {
 									bottom: 0,
 									top: 0,
 									height: '48px',
+									borderRadius: '0px 2px 2px 0px',
 								}}
 							>
 								<span style={{ marginTop: '10px' }}>
