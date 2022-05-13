@@ -15,7 +15,7 @@ import Drawerbar from './Drawbar';
 
 const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
 	display: 'flex',
-	width: '95%',
+	width: '100%',
 	margin: '0 auto',
 	justifyContent: 'space-between',
 	[theme.breakpoints.up('sm')]: {
@@ -48,7 +48,7 @@ export default function Navbar({ isVisibility }: Props) {
 			}}
 		>
 			<ToolbarStyled>
-				<Box sx={{ mr: 3 }}>
+				<Box sx={{ mr: 0 }}>
 					<Link href={'/'}>
 						<i>
 							<img src={'logo.png'} alt='logo' className={'open-logo'} />
@@ -60,7 +60,7 @@ export default function Navbar({ isVisibility }: Props) {
 						sx={{
 							width: '512px',
 							display: {
-								sx: 'none',
+								xs: 'none',
 								sm: 'none',
 								md: 'flex',
 							},
@@ -182,21 +182,22 @@ export default function Navbar({ isVisibility }: Props) {
 						color='secondary'
 						sx={{
 							borderRadius: '4px',
-
-							padding: '12px 10px',
-
+							width: { xs: 'auto', sm: 'auto', md: 'auto' },
+							padding: '10px 12px',
 							display: { xs: 'flex', md: 'flex' },
 						}}
 					>
 						<Typography
 							sx={{
+								fontWeight: 700,
 								fontSize: {
 									xs: '14px',
 									sm: '16px',
 									md: '16px',
-									lineHeight: '150%',
-									fontWeight: 600,
 								},
+								lineHeight: '20px',
+								textAlign: 'center',
+								letterSpacing: '0.02em',
 							}}
 						>
 							Get Started

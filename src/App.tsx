@@ -44,7 +44,7 @@ export default function App() {
 	React.useEffect(() => {
 		const observer = new IntersectionObserver((entries) => {
 			const entryPoint = entries[0];
-			console.log(entryPoint.isIntersecting);
+			// console.log(entryPoint.isIntersecting);
 
 			setVisible(entryPoint.isIntersecting);
 		});
