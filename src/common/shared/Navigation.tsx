@@ -31,7 +31,14 @@ const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
 
 export default function Navbar() {
 	return (
-		<AppBar position='sticky' color={'primary'}>
+		<AppBar
+			position='sticky'
+			color={'primary'}
+			sx={{
+				background: '#ffffff',
+				boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.06)',
+			}}
+		>
 			<ToolbarStyled>
 				<Box>
 					<Link href={'/'}>

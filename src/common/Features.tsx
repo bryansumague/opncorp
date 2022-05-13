@@ -9,9 +9,10 @@ function FeaturesBox() {
 					display: { sm: 'block', md: 'flex' },
 					flexDirection: { sm: 'none', md: 'row-reverse' },
 					alignItems: 'center',
+					justifyContent: 'center',
 				}}
 			>
-				<Box>
+				<Box sx={{ width: { xs: '100%', sm: '100%', md: '50%' } }}>
 					<Box>
 						<Typography
 							sx={{
@@ -26,16 +27,14 @@ function FeaturesBox() {
 						</Typography>
 					</Box>
 					<Typography
-						variant={'h4'}
 						sx={{
 							fontWeight: 700,
 							fontSize: { xs: '26px', sm: '48px', md: '48px' },
 							lineHeight: '125%',
 							letterSpacing: { xs: '-0.02em', sm: 'none', md: 'none' },
 						}}
-						component={'h4'}
 						color='secondary'
-						gutterBottom
+						component={'h2'}
 					>
 						Basic customer relationship management and invoicing system
 					</Typography>
@@ -43,6 +42,7 @@ function FeaturesBox() {
 						sx={{
 							fontWeight: 400,
 							fontSize: { xs: '14px', sm: '16px', md: '18px' },
+							maxWidth: '50ch',
 							lineHeight: '165%',
 							mt: 2,
 							mb: 5,
@@ -52,7 +52,7 @@ function FeaturesBox() {
 						management flow and invoicing assistance to kickstart your business
 					</Typography>
 				</Box>
-				<Box>
+				<Box sx={{ width: { xs: '100%', sm: '100%', md: '50%' } }}>
 					<i>
 						<img
 							src={'mb3.svg'}
@@ -63,7 +63,7 @@ function FeaturesBox() {
 				</Box>
 			</Box>
 			<br /> <br /> <br /> <br />
-			<Box sx={{ textAlign: 'center', display: { sm: 'block', md: 'none' } }}>
+			<Box sx={{ textAlign: 'center', display: { sm: 'flex', md: 'none' } }}>
 				<i>
 					<img
 						src={'ads.svg'}
@@ -76,6 +76,7 @@ function FeaturesBox() {
 				sx={{
 					textAlign: 'center',
 					display: { xs: 'none', sm: 'none', md: 'flex' },
+					justifyContent: 'center',
 				}}
 			>
 				<i>

@@ -47,6 +47,7 @@ function PaymentSecurity() {
 						sx={{
 							fontWeight: 400,
 							fontSize: { xs: '14px', sm: '16px', md: '18px' },
+							maxWidth: '70ch',
 							lineHeight: '165%',
 							mb: 2,
 						}}
@@ -57,17 +58,17 @@ function PaymentSecurity() {
 						when you approve the work.
 					</Typography>
 				</Box>
-
 				<Box>
 					<i>
 						<img
-							src={'mb.svg'}
+							src={'mbdesk.svg'}
 							alt='transaction'
 							style={{ maxWidth: '100%', width: '100%' }}
 						/>
 					</i>
 				</Box>
 			</Box>
+			<Box></Box>
 		</>
 	);
 }

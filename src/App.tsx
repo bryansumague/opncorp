@@ -21,6 +21,8 @@ const WrapperMain = styled('div')(({ theme }) => ({
 	display: 'block',
 	width: '85%',
 	margin: '0 auto',
+	background:
+		'linear-gradient(180deg, #FFFFFF 14.32%, rgba(227, 248, 255, 0.15) 27.6%, #FFFFFF 75.52%, #FFFFFF 100%)',
 	[theme.breakpoints.up('sm')]: {
 		display: 'block',
 		width: '83.33%',
@@ -29,6 +31,7 @@ const WrapperMain = styled('div')(({ theme }) => ({
 	[theme.breakpoints.up('md')]: {
 		display: 'block',
 		width: '92%',
+		maxWidth: '1280px',
 		margin: '0 auto',
 	},
 }));

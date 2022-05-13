@@ -29,6 +29,7 @@ const About = () => {
 			sx={{
 				display: 'flex',
 				flexDirection: { xs: 'column', sm: 'column', md: 'flex' },
+				width: '150px',
 			}}
 		>
 			<Typography
@@ -46,7 +47,7 @@ const About = () => {
 			</Typography>
 			<Typography
 				sx={{
-					fontSize: { xs: '12px', sm: '16px' },
+					fontSize: { xs: '12px', sm: '16px', md: '16px' },
 
 					fontWeight: 400,
 					color: '#3C3C3C',
@@ -313,7 +314,13 @@ const SocialIcon = () => {
 function Footer() {
 	return (
 		<>
-			<Box sx={{ display: { xs: 'block', sm: 'none' } }}>
+			<Box
+				sx={{
+					display: { xs: 'flex', sm: 'none' },
+					flexDirection: 'column',
+					background: '#ffffff',
+				}}
+			>
 				<Finances />
 				<Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
 					<Grid item xs={6}>
@@ -330,7 +337,12 @@ function Footer() {
 					</Grid>
 				</Grid>
 			</Box>
-			<Box sx={{ display: { xs: 'none', sm: 'block', md: 'none' } }}>
+			<Box
+				sx={{
+					display: { xs: 'none', sm: 'flex', md: 'none' },
+					flexDirection: 'column',
+				}}
+			>
 				<i>
 					<img src={'logo.png'} alt='logo' />
 				</i>
@@ -372,25 +384,32 @@ function Footer() {
 
 			<Box
 				sx={{
-					display: { xs: 'none', sm: 'none', md: 'block' },
+					display: { xs: 'none', sm: 'none', md: 'flex' },
+					justifyContent: 'space-between',
 				}}
 			>
 				<Box
 					sx={{
+						width: '100%',
 						display: 'flex',
 						flexDirection: 'row',
-
-						gap: '15%',
+						background: '#ffffff',
 					}}
 				>
-					<Box sx={{ display: 'flex', flexDirection: 'column' }}>
+					<Box
+						sx={{
+							display: 'flex',
+							flexDirection: 'column',
+							width: '100%',
+						}}
+					>
 						<i>
 							<img src={'logo.png'} alt='logo' />
 						</i>
 						<Typography
 							sx={{
 								fontWeight: 400,
-								fontSize: '0.85rem',
+								fontSize: { xs: '14px', sm: '14px', md: '16px' },
 								lineHeight: '165%',
 								mt: 1,
 								mb: 2,
@@ -404,7 +423,14 @@ function Footer() {
 							<SocialIcon />
 						</Box>
 					</Box>
-					<Box sx={{ display: 'flex', flexDirection: 'row', gap: '9.375rem' }}>
+					<Box
+						sx={{
+							flexBasis: '100%',
+							display: 'flex',
+							flexDirection: 'row',
+							justifyContent: 'space-between',
+						}}
+					>
 						<About />
 
 						<Support />

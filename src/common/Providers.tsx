@@ -16,6 +16,7 @@ function ProviderServices() {
 					sx={{
 						display: { sm: 'block', md: 'flex' },
 						flexDirection: { sm: 'none', md: 'column' },
+						width: { xs: '100%', sm: '100%', md: '50%' },
 					}}
 				>
 					<Box>
@@ -37,7 +38,7 @@ function ProviderServices() {
 					<Typography
 						sx={{
 							fontWeight: 700,
-							fontSize: { xs: '1.625rem', sm: '1.5rem', md: '3rem' },
+							fontSize: { xs: '26px', sm: '48px', md: '48px' },
 							lineHeight: '125%',
 							letterSpacing: { xs: '-0.02em', sm: 'none', md: 'none' },
 						}}
@@ -152,7 +153,11 @@ function ProviderServices() {
 					</Box>
 				</Box>
 				<br />
-				<Box>
+				<Box
+					sx={{
+						width: { xs: '100%', sm: '100%', md: '50%' },
+					}}
+				>
 					<i>
 						<img
 							src={'mb2.svg'}

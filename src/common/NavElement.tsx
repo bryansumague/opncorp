@@ -38,75 +38,77 @@ const BoxScroll = styled(Box)(({ theme }) => ({
 
 const NavElement = () => {
 	return (
-		<BoxScroll>
-			<Box sx={{ width: '92%', margin: '0 auto' }}>
-				<Stack
-					direction='row'
-					justifyContent='center'
-					alignItems='center'
-					spacing={3}
-				>
-					<Typography
-						sx={{
-							fontWeight: 600,
-							fontSize: 'calc(0.6rem + 0.5vw)',
-							lineHeight: '125%',
-						}}
+		<Box sx={{ position: 'relative', zIndex: 2 }}>
+			<BoxScroll>
+				<Box sx={{ width: '92%', margin: '0 auto' }}>
+					<Stack
+						direction='row'
+						justifyContent='center'
+						alignItems='center'
+						spacing={3}
 					>
-						Incorporation & Corporate Governance
-					</Typography>
-					<Typography
-						sx={{
-							fontWeight: 600,
-							fontSize: 'calc(0.6rem + 0.5vw)',
-							lineHeight: '125%',
-						}}
-					>
-						Finance
-					</Typography>
-					<Typography
-						sx={{
-							fontWeight: 600,
-							fontSize: 'calc(0.6rem + 0.5vw)',
-							lineHeight: '125%',
-						}}
-					>
-						Human Resources & Payroll
-					</Typography>
-					<Typography
-						sx={{
-							fontWeight: 600,
-							fontSize: 'calc(0.6rem + 0.5vw)',
-							lineHeight: '125%',
-						}}
-					>
-						Research & Data Analysis
-					</Typography>
-					<Typography
-						sx={{
-							fontWeight: 600,
-							fontSize: 'calc(0.6rem + 0.5vw)',
-							lineHeight: '125%',
-						}}
-					>
-						Marketing & Design
-					</Typography>
-					<Typography
-						sx={{
-							fontWeight: 600,
-							fontSize: 'calc(0.6rem + 0.5vw)',
-							lineHeight: '125%',
-						}}
-					>
-						<img
-							style={{ width: '164px', height: '52px' }}
-							src={'btncategory.svg'}
-							alt='svg'
-						/>
-					</Typography>
-				</Stack>
-			</Box>
-		</BoxScroll>
+						<Typography
+							sx={{
+								fontWeight: 600,
+								fontSize: '16px',
+								lineHeight: '125%',
+							}}
+						>
+							Incorporation & Corporate Governance
+						</Typography>
+						<Typography
+							sx={{
+								fontWeight: 600,
+								fontSize: '16px',
+								lineHeight: '125%',
+							}}
+						>
+							Finance
+						</Typography>
+						<Typography
+							sx={{
+								fontWeight: 600,
+								fontSize: '16px',
+								lineHeight: '125%',
+							}}
+						>
+							Human Resources & Payroll
+						</Typography>
+						<Typography
+							sx={{
+								fontWeight: 600,
+								fontSize: '16px',
+								lineHeight: '125%',
+							}}
+						>
+							Research & Data Analysis
+						</Typography>
+						<Typography
+							sx={{
+								fontWeight: 600,
+								fontSize: '16px',
+								lineHeight: '125%',
+							}}
+						>
+							Marketing & Design
+						</Typography>
+						<Typography
+							sx={{
+								fontWeight: 600,
+								fontSize: '16px',
+								lineHeight: '125%',
+							}}
+						>
+							<img
+								style={{ width: '164px', height: '52px' }}
+								src={'btncategory.svg'}
+								alt='svg'
+							/>
+						</Typography>
+					</Stack>
+				</Box>
+			</BoxScroll>
+		</Box>
 	);
 };
 
