@@ -3,16 +3,18 @@ import { Box, Typography } from '@mui/material';
 
 function FeaturesBox() {
 	return (
-		<>
+		<Box
+			sx={{
+				background:
+					'linear-gradient(180deg, #FFFFFF 11.46%, rgba(255, 250, 239, 0.49) 25.66%, rgba(227, 248, 255, 0.51) 41.61%, #FFFFFF 73.86%, #FFFFFF 92.23%)',
+			}}
+		>
 			<Box
 				sx={{
 					display: { sm: 'block', md: 'flex' },
 					flexDirection: { sm: 'none', md: 'row-reverse' },
 					alignItems: 'center',
 					justifyContent: 'center',
-
-					background:
-						'linear-gradient(180deg, #FFFFFF 14.32%, rgba(227, 248, 255, 0.15) 27.6%, #FFFFFF 75.52%, #FFFFFF 100%)',
 				}}
 			>
 				<Box sx={{ width: { xs: '100%', sm: '100%', md: '50%' } }}>
@@ -91,7 +93,7 @@ function FeaturesBox() {
 				</i>
 			</Box>
 			<br /> <br />
-		</>
+		</Box>
 	);
 }
 
