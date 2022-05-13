@@ -64,9 +64,9 @@ function ProviderServices() {
 										<path
 											d='M9 12L11.1 14.25L15 9.75'
 											stroke='white'
-											stroke-width='2'
-											stroke-linecap='round'
-											stroke-linejoin='round'
+											strokeWidth='2'
+											strokeLinecap='round'
+											strokeLinejoin='round'
 										/>
 									</svg>
 								</i>
@@ -116,9 +116,9 @@ function ProviderServices() {
 										<path
 											d='M9 12L11.1 14.25L15 9.75'
 											stroke='white'
-											stroke-width='2'
-											stroke-linecap='round'
-											stroke-linejoin='round'
+											strokeWidth='2'
+											strokeLinecap='round'
+											strokeLinejoin='round'
 										/>
 									</svg>
 								</i>

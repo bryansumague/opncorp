@@ -28,7 +28,7 @@ const BoxScroll = styled(Box)(({ theme }) => ({
 	right: 0,
 	background: 'rgba(255, 255, 255, 0.95)',
 	boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.06)',
-	padding: '1rem',
+	padding: '.5rem 0',
 	animation: `${fadein} 0.2s linear`,
 
 	[theme.breakpoints.down('md')]: {
