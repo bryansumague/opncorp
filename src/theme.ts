@@ -59,6 +59,11 @@ const theme = createTheme({
 								borderRadius: '10px',
 							},
 						},
+						'& .MuiOutlinedInput-root.Mui-focused': {
+							'& > fieldset': {
+								borderColor: '#2752E7',
+							},
+						},
 					},
 				},
 			],
