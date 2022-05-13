@@ -53,7 +53,7 @@ export default function App() {
 
 	return (
 		<Wrapper>
-			<Navbar />
+			<Navbar isVisibility={isVisible} />
 
 			<WrapperMain>
 				{isVisible ? <NavElement /> : ''}
