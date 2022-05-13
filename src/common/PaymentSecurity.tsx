@@ -32,7 +32,7 @@ function PaymentSecurity() {
 						variant={'h4'}
 						sx={{
 							fontWeight: 700,
-							fontSize: { sm: '24px', md: '48px' },
+							fontSize: { xs: '26px', sm: '40px', md: '48px' },
 
 							lineHeight: '32px',
 							letterSpacing: '-0.02em',

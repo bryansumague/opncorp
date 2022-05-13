@@ -43,7 +43,7 @@ function ProviderServices() {
 					<Typography
 						sx={{
 							fontWeight: 700,
-							fontSize: { xs: '26px', sm: '48px', md: '48px' },
+							fontSize: { xs: '26px', sm: '40px', md: '48px' },
 							lineHeight: '125%',
 							letterSpacing: { xs: '-0.02em', sm: 'none', md: 'none' },
 						}}
