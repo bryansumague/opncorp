@@ -28,7 +28,7 @@ function FeaturesBox() {
 							color='secondary'
 							gutterBottom
 						>
-							Our Features
+							OUR FEATURE
 						</Typography>
 					</Box>
 					<Typography
