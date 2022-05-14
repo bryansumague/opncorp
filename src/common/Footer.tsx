@@ -277,7 +277,7 @@ const SocialIcon = () => {
 
 function Footer() {
 	return (
-		<Box sx={{ background: '#ffffff' }}>
+		<Box>
 			<Box
 				sx={{
 					display: { xs: 'flex', sm: 'none' },

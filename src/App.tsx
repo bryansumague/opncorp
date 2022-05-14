@@ -17,12 +17,29 @@ const Wrapper = styled('div')(({ theme }) => ({
 	margin: '0 auto',
 }));
 
+const WrapperMainSection1 = styled('div')({
+	background:
+		'linear-gradient(180deg, #FFFFFF 14.32%, rgba(227, 248, 255, 0.15) 27.6%, #FFFFFF 75.52%, #FFFFFF 100%)',
+});
+
+const WrapperMainSection2 = styled('div')({
+	background:
+		'linear-gradient(180deg, #FFFFFF 0.31%, rgba(255, 240, 240, 0.1) 20.53%, rgba(233, 238, 253, 0.23) 52.08%, #FFFFFF 96.75%)',
+});
+
+const WrapperMainSection3 = styled('div')({
+	background:
+		'linear-gradient(180deg, #FFFFFF 11.46%, rgba(255, 250, 239, 0.49) 25.66%, rgba(227, 248, 255, 0.51) 41.61%, #FFFFFF 73.86%, #FFFFFF 92.23%)',
+});
+
+const WrapperFooter = styled('div')({
+	background: '#ffffff',
+});
+
 const WrapperMain = styled('div')(({ theme }) => ({
 	display: 'block',
 	width: '85%',
 	margin: '0 auto',
-	background:
-		'linear-gradient(180deg, #FFFFFF 14.32%, rgba(227, 248, 255, 0.15) 27.6%, #FFFFFF 75.52%, #FFFFFF 100%)',
 	[theme.breakpoints.up('sm')]: {
 		display: 'block',
 		width: '83.33%',
@@ -54,22 +71,38 @@ export default function App() {
 	return (
 		<Wrapper>
 			<Navbar isVisibility={isVisible} />
+			{isVisible ? <NavElement /> : ''}
+			<WrapperMainSection1>
+				<WrapperMain>
+					<br /> <br /> <br /> <br />
+					<Headline />
+					<Explore />
+				</WrapperMain>
+			</WrapperMainSection1>
 
-			<WrapperMain>
-				{isVisible ? <NavElement /> : ''}
-				<Headline />
-				<Explore />
-				<br /> <br /> <br /> <br />
-				<Box ref={myRef}>
-					<PaymentSecurity />
-					<br /> <br /> <br /> <br />
-					<ProviderServices />
-					<br /> <br /> <br /> <br />
-					<FeaturesBox />
-					<br />
-					<Footer />
-				</Box>
-			</WrapperMain>
+			<Box ref={myRef}>
+				<WrapperMainSection2>
+					<WrapperMain>
+						<PaymentSecurity />
+						<br /> <br /> <br /> <br />
+						<ProviderServices />
+						<br /> <br /> <br /> <br />
+					</WrapperMain>
+				</WrapperMainSection2>
+
+				<WrapperMainSection3>
+					<WrapperMain>
+						<FeaturesBox />
+					</WrapperMain>
+
+					<WrapperFooter>
+						<WrapperMain>
+							<Footer />
+						</WrapperMain>
+					</WrapperFooter>
+				</WrapperMainSection3>
+			</Box>
+
 			{/* <Container>
 				<Box sx={{ my: 4 }}>
 					<Typography variant='h4' component='h1' gutterBottom>

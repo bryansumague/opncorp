@@ -4,15 +4,7 @@ import { Box, Typography } from '@mui/material';
 function PaymentSecurity() {
 	return (
 		<>
-			<Box
-				sx={{
-					display: { sm: 'block', md: 'flex' },
-					flexDirection: { sm: 'none', md: 'row-reverse' },
-					alignItems: 'center',
-					background:
-						'linear-gradient(180deg, #FFFFFF 0.31%, rgba(255, 240, 240, 0.1) 20.53%, rgba(233, 238, 253, 0.23) 52.08%, #FFFFFF 96.75%)',
-				}}
-			>
+			<Box>
 				<Box>
 					<Box>
 						<Typography
