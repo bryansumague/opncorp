@@ -24,8 +24,9 @@ const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
 		margin: '0 auto',
 	},
 	[theme.breakpoints.up('md')]: {
-		width: 'auto',
-		margin: '0 1%',
+		width: '100%',
+		maxWidth: '1280px',
+		margin: '0 auto',
 	},
 }));
 
