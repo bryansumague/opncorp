@@ -47,7 +47,7 @@ const WrapperMain = styled('div')(({ theme }) => ({
 	},
 	[theme.breakpoints.up('md')]: {
 		display: 'block',
-		width: '100%',
+		width: '92%',
 		maxWidth: '1280px',
 		margin: '0 auto',
 	},
