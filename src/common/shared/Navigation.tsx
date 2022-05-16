@@ -15,8 +15,9 @@ import Drawerbar from './Drawbar';
 
 const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
 	display: 'flex',
-	width: '100%',
+	width: '95%',
 	margin: '0 auto',
+	padding: '1rem',
 	justifyContent: 'space-between',
 	[theme.breakpoints.up('sm')]: {
 		display: 'flex',
@@ -27,7 +28,6 @@ const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
 		width: '92%',
 		maxWidth: '1280px',
 		margin: '0 auto',
-
 		paddingLeft: '0 !important',
 		paddingRight: '0 !important',
 	},
@@ -135,7 +135,13 @@ export default function Navbar({ isVisibility }: Props) {
 				) : (
 					''
 				)}
-				<Box display='flex' sx={{ gap: { xs: '12px', sm: '12px', md: '0' } }}>
+				<Box
+					display='flex'
+					sx={{
+						gap: { xs: '12px', sm: '12px', md: '0' },
+						flexDirection: 'row',
+					}}
+				>
 					<Button
 						variant='outlined'
 						sx={{
@@ -165,7 +171,7 @@ export default function Navbar({ isVisibility }: Props) {
 						sx={{
 							borderRadius: '4px',
 							padding: '12px 10px',
-							display: { xs: 'none', sm: 'block' },
+							display: { xs: 'none', sm: 'none', md: 'block' },
 							color: '#2752E7',
 						}}
 					>
@@ -189,9 +195,14 @@ export default function Navbar({ isVisibility }: Props) {
 						color='secondary'
 						sx={{
 							borderRadius: '4px',
-							width: { xs: 'auto', sm: 'auto', md: 'auto' },
-							padding: '10px 12px',
+							width: { xs: 'auto', sm: '142px', md: '141px' },
+
 							display: { xs: 'flex', md: 'flex' },
+							flexDirection: 'row',
+							justifyContent: 'center',
+							alignItems: 'center',
+							padding: '10px 12px',
+							gap: '10px',
 						}}
 					>
 						<Typography
@@ -202,7 +213,7 @@ export default function Navbar({ isVisibility }: Props) {
 									sm: '16px',
 									md: '16px',
 								},
-								lineHeight: '20px',
+								lineHeight: { xs: '20px', sm: '24px', md: '24px' },
 								textAlign: 'center',
 								letterSpacing: '0.02em',
 							}}

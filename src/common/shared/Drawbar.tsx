@@ -40,7 +40,7 @@ export default function Drawerbar() {
 
 	const list = (anchor: Anchor) => (
 		<Box
-			sx={{ width: 200, display: { xs: 'flex', md: 'none' } }}
+			sx={{ width: 200, display: { xs: 'flex', sm: 'flex', md: 'none' } }}
 			role='presentation'
 			onClick={toggleDrawer(anchor, false)}
 			onKeyDown={toggleDrawer(anchor, false)}
@@ -90,12 +90,21 @@ export default function Drawerbar() {
 						onClick={toggleDrawer(anchor, true)}
 						size='large'
 						edge='start'
-						color='default'
 						aria-label='menu'
 						title='Open'
-						sx={{ display: { xs: 'flex', md: 'none', ml: 8 } }}
+						sx={{
+							display: { xs: 'flex', md: 'none' },
+							justifyContent: 'flex-end',
+							padding: { xs: '0 0 0 8px !important', sm: '12px !important' },
+							color: '#2C3131',
+						}}
 					>
-						<MenuIcon sx={{ display: { xs: 'flex', md: 'none' } }} />
+						<MenuIcon
+							sx={{
+								display: { xs: 'flex', md: 'none' },
+								fontSize: '2.2rem',
+							}}
+						/>
 					</IconButton>
 					{/*<Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>*/}
 					<Drawer
