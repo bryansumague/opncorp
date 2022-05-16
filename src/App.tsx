@@ -32,13 +32,22 @@ const WrapperMainSection3 = styled('div')({
 		'linear-gradient(180deg, #FFFFFF 11.46%, rgba(255, 250, 239, 0.49) 25.66%, rgba(227, 248, 255, 0.51) 41.61%, #FFFFFF 73.86%, #FFFFFF 92.23%)',
 });
 
-const WrapperFooter = styled('div')({
+const WrapperFooter = styled('div')(({ theme }) => ({
 	background: '#ffffff',
-});
+	marginTop: '48px',
+	[theme.breakpoints.up('sm')]: {
+		background: '#ffffff',
+		marginTop: '80px',
+	},
+	[theme.breakpoints.up('md')]: {
+		background: '#ffffff',
+		marginTop: '114px',
+	},
+}));
 
 const WrapperMain = styled('div')(({ theme }) => ({
 	display: 'block',
-	width: '85%',
+	width: '86%',
 	margin: '0 auto',
 	[theme.breakpoints.up('sm')]: {
 		display: 'block',
