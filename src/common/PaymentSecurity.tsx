@@ -3,8 +3,14 @@ import { Box, Typography } from '@mui/material';
 
 function PaymentSecurity() {
 	return (
-		<>
-			<Box>
+		<Box sx={{ marginTop: '120px' }}>
+			<Box
+				sx={{
+					display: { sm: 'block', md: 'flex' },
+					flexDirection: { sm: 'none', md: 'row-reverse' },
+					alignItems: 'center',
+				}}
+			>
 				<Box>
 					<Box>
 						<Typography
@@ -63,7 +69,7 @@ function PaymentSecurity() {
 				</Box>
 			</Box>
 			<Box></Box>
-		</>
+		</Box>
 	);
 }
 

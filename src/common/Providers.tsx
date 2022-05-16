@@ -3,7 +3,7 @@ import { Box, Grid, Typography } from '@mui/material';
 
 function ProviderServices() {
 	return (
-		<Box>
+		<Box sx={{ marginTop: '120px' }}>
 			<Box
 				sx={{
 					display: { sm: 'block', md: 'flex' },

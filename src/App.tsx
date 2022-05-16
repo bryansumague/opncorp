@@ -47,9 +47,8 @@ const WrapperMain = styled('div')(({ theme }) => ({
 	},
 	[theme.breakpoints.up('md')]: {
 		display: 'block',
-		width: '92%',
-		maxWidth: '1280px',
-		margin: '0 auto',
+		width: 'auto',
+		margin: '0 2.75%',
 	},
 }));
 
@@ -74,7 +73,6 @@ export default function App() {
 			{isVisible ? <NavElement /> : ''}
 			<WrapperMainSection1>
 				<WrapperMain>
-					<br /> <br /> <br /> <br />
 					<Headline />
 					<Explore />
 				</WrapperMain>
@@ -84,9 +82,7 @@ export default function App() {
 				<WrapperMainSection2>
 					<WrapperMain>
 						<PaymentSecurity />
-						<br /> <br /> <br /> <br />
 						<ProviderServices />
-						<br /> <br /> <br /> <br />
 					</WrapperMain>
 				</WrapperMainSection2>
 
