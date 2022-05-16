@@ -24,9 +24,12 @@ const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
 		margin: '0 auto',
 	},
 	[theme.breakpoints.up('md')]: {
-		width: '100%',
+		width: '92%',
 		maxWidth: '1280px',
 		margin: '0 auto',
+
+		paddingLeft: '0 !important',
+		paddingRight: '0 !important',
 	},
 }));
 
@@ -44,14 +47,18 @@ export default function Navbar({ isVisibility }: Props) {
 				margin: '0 auto',
 				boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.06)',
 				display: 'flex',
-				padding: '0.5rem',
 			}}
 		>
 			<ToolbarStyled>
-				<Box sx={{ mr: 0 }}>
+				<Box>
 					<Link href={'/'}>
 						<i>
-							<img src={'logo.png'} alt='logo' className={'open-logo'} />
+							<img
+								src={'logo.png'}
+								alt='logo'
+								className={'open-logo'}
+								style={{ maxWidth: '100%', width: '100%' }}
+							/>
 						</i>
 					</Link>
 				</Box>
@@ -128,7 +135,7 @@ export default function Navbar({ isVisibility }: Props) {
 				) : (
 					''
 				)}
-				<Box display='flex' sx={{ gap: { xs: '12px', sm: '12px' } }}>
+				<Box display='flex' sx={{ gap: { xs: '12px', sm: '12px', md: '0' } }}>
 					<Button
 						variant='outlined'
 						sx={{
