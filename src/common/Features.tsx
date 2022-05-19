@@ -19,6 +19,7 @@ function FeaturesBox() {
 								fontWeight: 600,
 								fontSize: { xs: '12px', sm: '16px', md: '18px' },
 								lineHeight: '16px',
+								marginBottom: '12px',
 							}}
 							color='secondary'
 							gutterBottom
@@ -32,6 +33,7 @@ function FeaturesBox() {
 							fontSize: { xs: '26px', sm: '40px', md: '48px' },
 							lineHeight: '125%',
 							letterSpacing: { xs: '-0.02em', sm: 'none', md: 'none' },
+							marginBottom: { xs: '32px', sm: '32px', md: '40px ' },
 						}}
 						color='secondary'
 						component={'h2'}
@@ -45,7 +47,6 @@ function FeaturesBox() {
 							maxWidth: '50ch',
 							lineHeight: '165%',
 							mt: 2,
-							mb: 5,
 						}}
 					>
 						For new entrepreneurs, we provide basic customer relationship
@@ -62,9 +63,9 @@ function FeaturesBox() {
 					</i>
 				</Box>
 			</Box>
-			<br /> <br /> <br /> <br />
 			<Box
 				sx={{
+					marginTop: { xs: '78px', sm: '112px ', md: '140px' },
 					textAlign: 'center',
 					display: 'flex',
 					flexDirection: 'column',

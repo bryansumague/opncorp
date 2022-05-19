@@ -19,35 +19,33 @@ function ProviderServices() {
 						width: { xs: '100%', sm: '100%', md: '50%' },
 					}}
 				>
-					<Box>
-						<Typography
-							variant='h4'
-							sx={{
-								fontWeight: 600,
-								lineHeight: '16px',
-								fontSize: { xs: '12px', sm: '16px', md: '18px' },
-							}}
-							color='secondary'
-							component='h1'
-							gutterBottom
-						>
-							WHY CHOOSE US
-						</Typography>
-					</Box>
-					<br />
+					<Typography
+						variant='h4'
+						sx={{
+							fontWeight: 600,
+							lineHeight: '16px',
+							fontSize: { xs: '12px', sm: '16px', md: '18px' },
+							marginBottom: '12px',
+						}}
+						color='secondary'
+						component='h1'
+						gutterBottom
+					>
+						WHY CHOOSE US
+					</Typography>
+
 					<Typography
 						sx={{
 							fontWeight: 700,
 							fontSize: { xs: '26px', sm: '40px', md: '48px' },
 							lineHeight: '125%',
 							letterSpacing: { xs: '-0.02em', sm: 'none', md: 'none' },
+							marginBottom: { xs: '32px', sm: '32px', md: '20px ' },
 						}}
 						color='secondary'
 					>
 						Quality Service Providers
 					</Typography>
-
-					<br />
 
 					<Box>
 						<>
@@ -152,7 +150,7 @@ function ProviderServices() {
 						</>
 					</Box>
 				</Box>
-				<br />
+
 				<Box
 					sx={{
 						width: { xs: '100%', sm: '100%', md: '50%' },

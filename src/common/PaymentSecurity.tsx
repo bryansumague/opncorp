@@ -12,22 +12,21 @@ function PaymentSecurity() {
 				}}
 			>
 				<Box>
-					<Box>
-						<Typography
-							variant='h4'
-							sx={{
-								fontWeight: 600,
-								fontSize: { xs: '12px', sm: '16px', md: '18px' },
-								lineHeight: '16px',
-							}}
-							color='secondary'
-							component='h1'
-							gutterBottom
-						>
-							WHY CHOOSE US
-						</Typography>
-					</Box>
-					<br />
+					<Typography
+						variant='h4'
+						sx={{
+							fontWeight: 600,
+							fontSize: { xs: '12px', sm: '16px', md: '18px' },
+							lineHeight: '16px',
+							marginBottom: '24px',
+						}}
+						color='secondary'
+						component='h1'
+						gutterBottom
+					>
+						WHY CHOOSE US
+					</Typography>
+
 					<Typography
 						variant={'h4'}
 						sx={{
@@ -36,6 +35,8 @@ function PaymentSecurity() {
 
 							lineHeight: '32px',
 							letterSpacing: '-0.02em',
+
+							marginBottom: { xs: '32px', sm: '32px', md: '40px ' },
 						}}
 						component={'h4'}
 						color='secondary'
@@ -49,7 +50,6 @@ function PaymentSecurity() {
 							fontSize: { xs: '14px', sm: '16px', md: '18px' },
 							maxWidth: '70ch',
 							lineHeight: '165%',
-							mb: 2,
 						}}
 					>
 						We enable solution providers to establish a milestone payment
