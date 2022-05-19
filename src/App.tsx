@@ -63,7 +63,7 @@ const WrapperMain = styled('div')(({ theme }) => ({
 }));
 
 export default function App() {
-	const myRef = React.useRef<any>(null);
+	const myRef = React.useRef<HTMLDivElement>(null!);
 
 	const [isVisible, setVisible] = React.useState(false);
 

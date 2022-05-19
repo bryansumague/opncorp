@@ -33,6 +33,16 @@ const BoxScroll = styled(Box)(({ theme }) => ({
 	},
 }));
 
+const CategoriesTypography = styled(Typography)(({ theme }) => ({
+	display: 'none',
+	[theme.breakpoints.up(1441)]: {
+		display: 'flex',
+		fontWeight: 600,
+		fontSize: '16px',
+		lineHeight: '125%',
+	},
+}));
+
 const NavElement = () => {
 	return (
 		<Box
@@ -95,19 +105,29 @@ const NavElement = () => {
 					>
 						Marketing & Design
 					</Typography>
-					<Typography
-						sx={{
-							fontWeight: 600,
-							fontSize: '16px',
-							lineHeight: '125%',
-						}}
+
+					<CategoriesTypography>
+						<img
+							style={{ width: '164px', height: '52px' }}
+							src={'btncategory.svg'}
+							alt='svg'
+						/>
+					</CategoriesTypography>
+
+					{/* <Typography
+						sx={(theme) => ({
+							display: 'none',
+							[theme.breakpoints.up(1441)]: {
+								display: 'flex',
+							},
+						})}
 					>
 						<img
 							style={{ width: '164px', height: '52px' }}
 							src={'btncategory.svg'}
 							alt='svg'
 						/>
-					</Typography>
+					</Typography> */}
 				</Stack>
 			</BoxScroll>
 		</Box>

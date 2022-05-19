@@ -95,7 +95,11 @@ export default function Drawerbar() {
 						sx={{
 							display: { xs: 'flex', md: 'none' },
 							justifyContent: 'flex-end',
-							padding: { xs: '0 0 0 8px !important', sm: '12px !important' },
+
+							padding: {
+								xs: '8px 0 8px 8px !important',
+								sm: '12px !important',
+							},
 							color: '#2C3131',
 						}}
 					>
