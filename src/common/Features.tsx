@@ -53,7 +53,7 @@ function FeaturesBox() {
 						management flow and invoicing assistance to kickstart your business
 					</Typography>
 				</Box>
-				<Box sx={{ width: { xs: '100%', sm: '100%', md: '50%' } }}>
+				{/* <Box sx={{ width: { xs: '100%', sm: '100%', md: '50%' } }}>
 					<i>
 						<img
 							src={'mb3.svg'}
@@ -61,7 +61,47 @@ function FeaturesBox() {
 							style={{ maxWidth: '100%', width: '100%' }}
 						/>
 					</i>
-				</Box>
+				</Box> */}
+
+				<Typography
+					sx={{ display: { xs: 'block', sm: 'none', md: 'none' } }}
+					component={'i'}
+				>
+					<img
+						src={'./homemobile/invoice.png'}
+						alt='transaction'
+						style={{ maxWidth: '100%', width: '100%' }}
+					/>
+				</Typography>
+
+				<Typography
+					sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}
+					component={'i'}
+				>
+					<img
+						src={'./homepage/invoice.png'}
+						alt='transaction'
+						style={{ maxWidth: '625px', width: '100%' }}
+					/>
+				</Typography>
+
+				<Typography
+					sx={{
+						display: {
+							xs: 'none',
+							sm: 'flex',
+							md: 'none',
+							justifyContent: 'center',
+						},
+					}}
+					component={'i'}
+				>
+					<img
+						src={'./homepage/invoice.png'}
+						alt='transaction'
+						style={{ maxWidth: '565px', width: '100%' }}
+					/>
+				</Typography>
 			</Box>
 			<Box
 				sx={{

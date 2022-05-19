@@ -151,7 +151,7 @@ function ProviderServices() {
 					</Box>
 				</Box>
 
-				<Box
+				{/* <Box
 					sx={{
 						width: { xs: '100%', sm: '100%', md: '50%' },
 					}}
@@ -161,6 +161,45 @@ function ProviderServices() {
 							src={'mb2.svg'}
 							alt='transaction'
 							style={{ maxWidth: '100%', width: '100%' }}
+						/>
+					</i>
+				</Box> */}
+
+				<Box sx={{ display: { xs: 'block', sm: 'none', md: 'none' } }}>
+					<i>
+						<img
+							src={'./homemobile/provider.png'}
+							alt='transaction'
+							style={{ maxWidth: '100%', width: 'auto' }}
+						/>
+					</i>
+				</Box>
+
+				<Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
+					<i>
+						<img
+							src={'./homepage/provider.png'}
+							alt='transaction'
+							style={{ maxWidth: '625px', width: '100%' }}
+						/>
+					</i>
+				</Box>
+
+				<Box
+					sx={{
+						display: {
+							xs: 'none',
+							sm: 'flex',
+							md: 'none',
+						},
+						justifyContent: 'center',
+					}}
+				>
+					<i>
+						<img
+							src={'./homepage/provider.png'}
+							alt='transaction'
+							style={{ maxWidth: '565px', width: '100%', margin: '0 auto' }}
 						/>
 					</i>
 				</Box>

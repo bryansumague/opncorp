@@ -58,7 +58,7 @@ function PaymentSecurity() {
 						when you approve the work.
 					</Typography>
 				</Box>
-				<Box>
+				{/* <Box>
 					<i>
 						<img
 							src={'mbdesk.svg'}
@@ -66,7 +66,63 @@ function PaymentSecurity() {
 							style={{ maxWidth: '100%', width: '100%' }}
 						/>
 					</i>
-				</Box>
+				</Box> */}
+
+				<Typography
+					sx={{
+						display: {
+							xs: 'block',
+							sm: 'none',
+							md: 'none',
+						},
+					}}
+					component={'i'}
+				>
+					<img
+						src={'./homemobile/payment.png'}
+						alt='transaction'
+						style={{ maxWidth: '100%', width: '100%' }}
+					/>
+				</Typography>
+
+				<Typography
+					sx={{
+						display: {
+							xs: 'none',
+							sm: 'none',
+							md: 'block',
+							width: '100%',
+							margin: '0 auto',
+						},
+					}}
+					component={'i'}
+				>
+					<img
+						src={'./homepage/payment.png'}
+						alt='transaction'
+						style={{ maxWidth: '625px', width: '100%' }}
+					/>
+				</Typography>
+
+				<Typography
+					sx={{
+						display: {
+							xs: 'none',
+							sm: 'flex',
+							md: 'none',
+							width: '100%',
+							margin: '0 auto',
+						},
+						justifyContent: 'center',
+					}}
+					component={'i'}
+				>
+					<img
+						src={'./homepage/payment.png'}
+						alt='transaction'
+						style={{ maxWidth: '525px', width: '100%' }}
+					/>
+				</Typography>
 			</Box>
 			<Box></Box>
 		</Box>
