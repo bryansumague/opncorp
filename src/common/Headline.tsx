@@ -18,9 +18,9 @@ const HeadingTablet = () => {
 				sx={{
 					display: { xs: 'none', sm: 'block' },
 					fontWeight: 700,
-					fontSize: { sm: '2.2rem', md: '56px' },
+					fontSize: { sm: '48px', md: '56px' },
 					lineHeight: '120%',
-					maxWidth: '21ch',
+					maxWidth: '17ch',
 					color: '#1D2130',
 					'&:first-line': {
 						color: '#2752E7',
@@ -43,7 +43,7 @@ const Subtitle = () => {
 			<Typography
 				sx={{
 					fontWeight: 400,
-					fontSize: { sm: '0.55rem', md: '18px' },
+					fontSize: { xs: '14px', sm: '18px', md: '18px' },
 					lineHeight: '165%',
 					mb: 2,
 				}}
@@ -57,25 +57,28 @@ const Subtitle = () => {
 
 const HeadingMobile = () => {
 	return (
-		<>
+		<Box>
 			<Typography
-				variant='h4'
-				sx={{ fontWeight: 700, fontSize: '1.9rem', lineHeight: '120%' }}
+				sx={{
+					width: '327px',
+
+					display: { xs: 'block', sm: 'none', md: 'none' },
+					fontWeight: 700,
+					fontSize: '36px',
+					lineHeight: '43px',
+					letterSpacing: '-0.02em',
+					color: '#1D2130',
+					'&:first-line': {
+						color: '#2752E7',
+					},
+				}}
 				color='secondary'
 				component='h1'
 				gutterBottom
 			>
-				Starting a business
+				Starting a business has never been easier
 			</Typography>
-			<Typography
-				sx={{ fontWeight: 700, fontSize: '2rem', lineHeight: '120%' }}
-				variant='h5'
-				component='h1'
-				gutterBottom
-			>
-				has never been easier
-			</Typography>
-		</>
+		</Box>
 	);
 };
 
@@ -88,13 +91,19 @@ const InputFields = () => {
 					color: '#000000',
 				}}
 				variant='outlined'
-				placeholder='Search here...'
+				placeholder='What service are you looking for? '
 			/>
 			<Box>
 				<Button
 					variant='contained'
 					color='secondary'
-					sx={{ position: 'absolute', right: 0, bottom: 0, top: 0 }}
+					sx={{
+						position: 'absolute',
+						right: 0,
+						bottom: 0,
+						top: 0,
+						textTransform: 'capitalize',
+					}}
 				>
 					<span style={{ marginTop: '10px' }}>
 						<i>
@@ -120,7 +129,12 @@ const InputFields = () => {
 							</svg>
 						</i>
 					</span>
-					&nbsp; Search
+					&nbsp;{' '}
+					<Typography
+						sx={{ display: { xs: 'none', sm: 'block', md: 'block' } }}
+					>
+						Search
+					</Typography>
 				</Button>
 			</Box>
 		</Grid>

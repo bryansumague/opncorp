@@ -45,6 +45,7 @@ export default function Navbar({ isVisibility }: Props) {
 			sx={{
 				width: '100%',
 				margin: '0 auto',
+				background: '#FFFFFF',
 				boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.06)',
 				display: 'flex',
 			}}

@@ -11,16 +11,67 @@ const GridBox = styled(Box)(({ theme }) => ({
 	background:
 		'linear-gradient(180deg, #FFFFFF 14.32%, rgba(227, 248, 255, 0.15) 27.6%, #FFFFFF 75.52%, #FFFFFF 100%)',
 	boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.07)',
-	padding: '0.5rem',
-	width: '100%',
-	height: '142px',
+	margin: '0 auto',
+	[theme.breakpoints.up('sm')]: {
+		display: 'flex',
+		width: '211px',
+		height: '184px',
+		marginBottom: '40px',
+	},
+	[theme.breakpoints.down('sm')]: {
+		display: 'flex',
+		width: '154px',
+		height: '142px',
+		marginBottom: '20px',
+	},
 }));
 
 const GridText = styled(Typography)(({ theme }) => ({
-	textAlign: 'center',
-	fontSize: '0.875rem',
-	fontWeight: 600,
-	// marginTop: '1rem',
+	[theme.breakpoints.up('sm')]: {
+		display: 'flex',
+		justifyContent: 'center',
+		fontWeight: 600,
+		width: '179px',
+		height: '40px',
+		fontSize: '16px',
+		textAlign: 'center',
+	},
+	[theme.breakpoints.down('sm')]: {
+		display: 'flex',
+		justifyContent: 'center',
+		fontWeight: 600,
+		width: '130px',
+		height: '72px',
+		fontSize: '14px',
+		textAlign: 'center',
+	},
+}));
+
+const GridBoxContainer = styled(Box)(({ theme }) => ({
+	display: 'flex',
+	justifyContent: 'center',
+	flexDirection: 'column',
+	alignItems: 'center',
+
+	marginBottom: '20px',
+
+	[theme.breakpoints.down('sm')]: {
+		paddingTop: '30px',
+		marginBottom: '16px',
+	},
+}));
+
+const GridBoxContent = styled(Box)(({ theme }) => ({
+	display: 'flex',
+	justifyContent: 'center',
+	alignItems: 'center',
+	background: 'rgb(39,82,231,0.1)',
+	width: '72px',
+	borderRadius: '8px',
+	height: '72px',
+	[theme.breakpoints.up('sm')]: {
+		marginBottom: '24px',
+	},
 }));
 
 function Explore() {
@@ -45,17 +96,23 @@ function Explore() {
 			<Grid
 				container
 				rowSpacing={2}
-				columnSpacing={{ xs: 2, sm: 2, md: 3 }}
 				sx={{
 					display: 'flex',
-					justifyContent: { xs: 'flex-start', sm: 'flex-start', md: 'center' },
+					justifyContent: {
+						xs: 'flex-start',
+						sm: 'flex-start',
+						md: 'space-around',
+					},
+					// 	display: 'grid',
+					// gridTemplateColumns: 'repeat(auto-fit,minmax(211px,1fr))',
+					// gap: '40px',
 				}}
 			>
 				<Grid item xs={6} sm={4} md={2}>
 					<GridBox>
-						<Box sx={{ width: '80%', margin: '0 auto', height: '142px' }}>
-							<Box sx={{ textAlign: 'center', m: 2 }}>
-								<i style={{ background: '#eeeeee', padding: '0.5rem' }}>
+						<GridBoxContainer>
+							<GridBoxContent>
+								<i>
 									<svg width='20' height='20' viewBox='0 0 20 20' fill='none'>
 										<path
 											fillRule='evenodd'
@@ -65,18 +122,18 @@ function Explore() {
 										/>
 									</svg>
 								</i>
-							</Box>
+							</GridBoxContent>
 							<Box>
 								<GridText>Incoporation & Corporate Governance</GridText>
 							</Box>
-						</Box>
+						</GridBoxContainer>
 					</GridBox>
 				</Grid>
 				<Grid item xs={6} sm={4} md={2}>
 					<GridBox>
-						<Box sx={{ width: '80%', margin: '0 auto', height: '142px' }}>
-							<Box sx={{ textAlign: 'center', m: 2 }}>
-								<i style={{ background: '#eeeeee', padding: '0.5rem' }}>
+						<GridBoxContainer>
+							<GridBoxContent sx={{ background: 'rgb(255,106,104,0.1)' }}>
+								<i>
 									<svg
 										width='20'
 										height='20'
@@ -110,19 +167,19 @@ function Explore() {
 										</defs>
 									</svg>
 								</i>
-							</Box>
+							</GridBoxContent>
 							<Box>
 								<GridText>Finance</GridText>
 							</Box>
-						</Box>
+						</GridBoxContainer>
 					</GridBox>
 				</Grid>
 
 				<Grid item xs={6} sm={4} md={2}>
 					<GridBox>
-						<Box sx={{ width: '80%', margin: '0 auto', height: '142px' }}>
-							<Box sx={{ textAlign: 'center', m: 2 }}>
-								<i style={{ background: '#eeeeee', padding: '0.5rem' }}>
+						<GridBoxContainer>
+							<GridBoxContent sx={{ background: 'rgb(255,223,108,0.1)' }}>
+								<i>
 									<svg
 										width='19'
 										height='23'
@@ -138,19 +195,19 @@ function Explore() {
 										/>
 									</svg>
 								</i>
-							</Box>
+							</GridBoxContent>
 							<Box>
 								<GridText>Human Resource (HR) & Payroll</GridText>
 							</Box>
-						</Box>
+						</GridBoxContainer>
 					</GridBox>
 				</Grid>
 
 				<Grid item xs={6} sm={4} md={2}>
 					<GridBox>
-						<Box sx={{ width: '80%', margin: '0 auto', height: '142px' }}>
-							<Box sx={{ textAlign: 'center', m: 2 }}>
-								<i style={{ background: '#eeeeee', padding: '0.5rem' }}>
+						<GridBoxContainer>
+							<GridBoxContent sx={{ background: 'rgb(143,238,255,0.1)' }}>
+								<i>
 									<svg
 										width='18'
 										height='20'
@@ -184,19 +241,19 @@ function Explore() {
 										/>
 									</svg>
 								</i>
-							</Box>
+							</GridBoxContent>
 							<Box>
 								<GridText>Research & Data Analysis</GridText>
 							</Box>
-						</Box>
+						</GridBoxContainer>
 					</GridBox>
 				</Grid>
 
 				<Grid item xs={6} sm={4} md={2}>
 					<GridBox>
-						<Box sx={{ width: '80%', margin: '0 auto', height: '142px' }}>
-							<Box sx={{ textAlign: 'center', m: 2 }}>
-								<i style={{ background: '#eeeeee', padding: '0.5rem' }}>
+						<GridBoxContainer>
+							<GridBoxContent sx={{}}>
+								<i>
 									<svg
 										width='15'
 										height='20'
@@ -346,11 +403,11 @@ function Explore() {
 										/>
 									</svg>
 								</i>
-							</Box>
+							</GridBoxContent>
 							<Box>
 								<GridText>Marketing & Design</GridText>
 							</Box>
-						</Box>
+						</GridBoxContainer>
 					</GridBox>
 				</Grid>
 			</Grid>

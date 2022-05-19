@@ -18,6 +18,7 @@ const Wrapper = styled('div')(({ theme }) => ({
 }));
 
 const WrapperMainSection1 = styled('div')({
+	margin: '40px 0',
 	background:
 		'linear-gradient(180deg, #FFFFFF 14.32%, rgba(227, 248, 255, 0.15) 27.6%, #FFFFFF 75.52%, #FFFFFF 100%)',
 });
@@ -47,11 +48,11 @@ const WrapperFooter = styled('div')(({ theme }) => ({
 
 const WrapperMain = styled('div')(({ theme }) => ({
 	display: 'block',
-	width: '86%',
+	width: '90%',
 	margin: '0 auto',
 	[theme.breakpoints.up('sm')]: {
 		display: 'block',
-		width: '83.33%',
+		width: '90%',
 		margin: '0 auto',
 	},
 	[theme.breakpoints.up('md')]: {

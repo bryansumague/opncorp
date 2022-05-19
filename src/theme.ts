@@ -49,19 +49,19 @@ const theme = createTheme({
 						fontSize: '1rem',
 						'& .MuiOutlinedInput-root': {
 							'& > fieldset': {
-								borderColor: '#2752E7',
-								borderRadius: '10px',
+								border: '0.5px solid #2752E7',
+								borderRadius: '4px',
 							},
 						},
 						'& .MuiOutlinedInput-root:hover': {
 							'& > fieldset': {
-								borderColor: '#2752E7',
-								borderRadius: '10px',
+								border: '0.5px solid #2752E7',
 							},
 						},
 						'& .MuiOutlinedInput-root.Mui-focused': {
 							'& > fieldset': {
 								borderColor: '#2752E7',
+								borderRadius: '4px',
 							},
 						},
 					},
