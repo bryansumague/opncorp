@@ -52,7 +52,7 @@ const WrapperMain = styled('div')(({ theme }) => ({
 	margin: '0 auto',
 	[theme.breakpoints.up('sm')]: {
 		display: 'block',
-		width: '90%',
+		width: '92%',
 		margin: '0 auto',
 	},
 	[theme.breakpoints.up('md')]: {

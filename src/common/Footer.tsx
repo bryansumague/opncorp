@@ -409,8 +409,7 @@ function Footer() {
 						fontWeight: 400,
 						lineHeight: '16px',
 						color: '#9B9B9B',
-						mt: 5,
-						mb: 2,
+						margin: '40px 0',
 						textAlign: 'center',
 					}}
 				>
