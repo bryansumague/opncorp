@@ -22,10 +22,12 @@ const BoxScroll = styled(Box)(({ theme }) => ({
 	left: 0,
 	right: 0,
 	width: '100%',
+	height: '80px',
 	margin: '0 auto',
 	background: 'rgba(255, 255, 255, 0.95)',
 	boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.06)',
-	padding: '.5rem 0',
+	display: 'flex',
+	alignItems: 'center',
 	animation: `${fadein} 0.2s linear`,
 
 	[theme.breakpoints.down('md')]: {

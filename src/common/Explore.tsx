@@ -105,7 +105,7 @@ function Explore() {
 					},
 					// 	display: 'grid',
 					// gridTemplateColumns: 'repeat(auto-fit,minmax(211px,1fr))',
-					// gap: '40px',
+					gap: { xs: '0', sm: '0', md: '40px' },
 				}}
 			>
 				<Grid item xs={6} sm={4} md={2}>

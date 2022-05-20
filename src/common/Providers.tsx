@@ -175,7 +175,16 @@ function ProviderServices() {
 					</i>
 				</Box>
 
-				<Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
+				<Box
+					sx={{
+						display: {
+							xs: 'none',
+							sm: 'none',
+							md: 'flex',
+							justifyContent: 'center',
+						},
+					}}
+				>
 					<i>
 						<img
 							src={'./homepage/provider.png'}

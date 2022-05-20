@@ -55,10 +55,10 @@ export default function Navbar({ isVisibility }: Props) {
 					<Link href={'/'}>
 						<i>
 							<img
-								src={'logo.png'}
+								src={'./homepage/opn.svg'}
 								alt='logo'
 								className={'open-logo'}
-								style={{ maxWidth: '100%', width: '100%' }}
+								style={{ maxWidth: '188px', width: '100%' }}
 							/>
 						</i>
 					</Link>
@@ -66,7 +66,7 @@ export default function Navbar({ isVisibility }: Props) {
 				{isVisibility ? (
 					<Box
 						sx={{
-							width: '512px',
+							width: '49.140625%', //629px if maxwidth is 1280 for fluid layout
 							display: {
 								xs: 'none',
 								sm: 'none',
@@ -241,6 +241,7 @@ export default function Navbar({ isVisibility }: Props) {
 								lineHeight: { xs: '20px', sm: '24px', md: '24px' },
 								textAlign: 'center',
 								letterSpacing: '0.02em',
+								textTransform: 'capitalize',
 							}}
 						>
 							Login / SignUp

@@ -75,7 +75,10 @@ function FeaturesBox() {
 				</Typography>
 
 				<Typography
-					sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}
+					sx={{
+						display: { xs: 'none', sm: 'none', md: 'flex' },
+						justifyContent: 'center',
+					}}
 					component={'i'}
 				>
 					<img

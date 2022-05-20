@@ -40,7 +40,7 @@ const About = () => {
 					letterSpacing: '0.02em',
 					color: '#1D2130',
 					lineHeight: '20px',
-					mb: 1,
+					marginBottom: { xs: '16px', sm: '12px', md: '20px' },
 				}}
 			>
 				About
@@ -48,6 +48,7 @@ const About = () => {
 			<Typography
 				sx={{
 					fontSize: { xs: '12px', sm: '16px', md: '16px' },
+					marginBottom: { xs: '8px', sm: '8px', md: '12px' },
 
 					fontWeight: 400,
 					color: '#3C3C3C',
@@ -87,7 +88,7 @@ const Support = () => {
 					letterSpacing: '0.02em',
 					color: '#1D2130',
 					lineHeight: '20px',
-					mb: 1,
+					marginBottom: { xs: '16px', sm: '12px', md: '20px' },
 				}}
 			>
 				Support
@@ -123,13 +124,20 @@ const ContactUs = () => {
 					letterSpacing: '0.02em',
 					color: '#1D2130',
 					lineHeight: '20px',
-					mb: 1,
+					marginBottom: { xs: '16px', sm: '12px', md: '20px' },
 				}}
 			>
 				Contact Us
 			</Typography>
 
-			<Box sx={{ display: 'flex', flexDirection: 'row', gap: '0.5rem' }}>
+			<Box
+				sx={{
+					display: 'flex',
+					flexDirection: 'row',
+					gap: '0.5rem',
+					marginBottom: { xs: '8px', sm: '8px', md: '12px' },
+				}}
+			>
 				<Typography
 					sx={{
 						fontSize: { xs: '12px', sm: '16px' },

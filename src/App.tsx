@@ -19,8 +19,10 @@ const Wrapper = styled('div')(({ theme }) => ({
 
 const WrapperMainSection1 = styled('div')({
 	margin: '40px 0',
+	// background:
+	// 	'linear-gradient(180deg, #FFFFFF 14.32%, rgba(227, 248, 255, 0.15) 27.6%, #FFFFFF 75.52%, #FFFFFF 100%)',
 	background:
-		'linear-gradient(180deg, #FFFFFF 14.32%, rgba(227, 248, 255, 0.15) 27.6%, #FFFFFF 75.52%, #FFFFFF 100%)',
+		'linear-gradient(180deg, #FFFFFF 0.31%, rgba(255, 240, 240, 0.1) 20.53%, rgba(233, 238, 253, 0.23) 52.08%, #FFFFFF 96.75%)',
 });
 
 const WrapperMainSection2 = styled('div')({

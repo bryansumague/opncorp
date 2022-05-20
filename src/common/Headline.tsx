@@ -86,6 +86,7 @@ const InputFields = () => {
 	return (
 		<Grid container sx={{ position: 'relative' }}>
 			<TextField
+				inputProps={{ style: { padding: '15px 0px 15px 24px' } }}
 				fullWidth
 				sx={{
 					color: '#000000',
@@ -100,9 +101,10 @@ const InputFields = () => {
 					sx={{
 						position: 'absolute',
 						right: 0,
-						bottom: 0,
+						bottom: 3,
 						top: 0,
 						textTransform: 'capitalize',
+						minheight: '56px',
 					}}
 				>
 					<span style={{ marginTop: '10px' }}>

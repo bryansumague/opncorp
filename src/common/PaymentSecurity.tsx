@@ -90,10 +90,9 @@ function PaymentSecurity() {
 						display: {
 							xs: 'none',
 							sm: 'none',
-							md: 'block',
-							width: '100%',
-							margin: '0 auto',
+							md: 'flex',
 						},
+						justifyContent: 'center',
 					}}
 					component={'i'}
 				>
