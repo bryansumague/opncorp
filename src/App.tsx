@@ -11,7 +11,7 @@ import FeaturesBox from './common/Features';
 import Footer from './common/Footer';
 import { Box, styled } from '@mui/material';
 import NavElement from './common/NavElement';
-import { Helmet } from 'react-helmet-async';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const Wrapper = styled('div')(({ theme }) => ({
 	width: '100%',
@@ -82,53 +82,54 @@ export default function App() {
 	}, []);
 
 	return (
-		<Wrapper>
-			<Helmet>
-				<title>OpnCorp</title>
-				<meta name='opncorp:card' content='summary_large_image' />
-				<meta
-					name='opncorp:image'
-					content='https://singular-mermaid-a77676.netlify.app/'
-				/>
-				<meta
-					name='description'
-					content='We enable solution providers to establish a milestone payment system. This means that you as the customer always know what you are paying for and the money is only released to the solution provider when you approve the work'
-				/>
+		<HelmetProvider>
+			<Wrapper>
+				<Helmet>
+					<title>OpnCorp</title>
+					<meta name='opncorp:card' content='summary_large_image' />
+					<meta
+						name='opncorp:image'
+						content='https://singular-mermaid-a77676.netlify.app/'
+					/>
+					<meta
+						name='description'
+						content='We enable solution providers to establish a milestone payment system. This means that you as the customer always know what you are paying for and the money is only released to the solution provider when you approve the work'
+					/>
 
-				<meta name='opncorp:creator' content='@opncorp' />
-				<meta name='opncorp:site' content='@opncorp' />
-			</Helmet>
-			<Navbar isVisibility={isVisible} />
-			{isVisible ? <NavElement /> : ''}
-			<WrapperMainSection1>
-				<WrapperMain>
-					<Headline />
-					<Explore />
-				</WrapperMain>
-			</WrapperMainSection1>
-
-			<Box ref={myRef}>
-				<WrapperMainSection2>
+					<meta name='opncorp:creator' content='@opncorp' />
+					<meta name='opncorp:site' content='@opncorp' />
+				</Helmet>
+				<Navbar isVisibility={isVisible} />
+				{isVisible ? <NavElement /> : ''}
+				<WrapperMainSection1>
 					<WrapperMain>
-						<PaymentSecurity />
-						<ProviderServices />
+						<Headline />
+						<Explore />
 					</WrapperMain>
-				</WrapperMainSection2>
+				</WrapperMainSection1>
 
-				<WrapperMainSection3>
-					<WrapperMain>
-						<FeaturesBox />
-					</WrapperMain>
-
-					<WrapperFooter>
+				<Box ref={myRef}>
+					<WrapperMainSection2>
 						<WrapperMain>
-							<Footer />
+							<PaymentSecurity />
+							<ProviderServices />
 						</WrapperMain>
-					</WrapperFooter>
-				</WrapperMainSection3>
-			</Box>
+					</WrapperMainSection2>
 
-			{/* <Container>
+					<WrapperMainSection3>
+						<WrapperMain>
+							<FeaturesBox />
+						</WrapperMain>
+
+						<WrapperFooter>
+							<WrapperMain>
+								<Footer />
+							</WrapperMain>
+						</WrapperFooter>
+					</WrapperMainSection3>
+				</Box>
+
+				{/* <Container>
 				<Box sx={{ my: 4 }}>
 					<Typography variant='h4' component='h1' gutterBottom>
 						Starting a business has never been easier
@@ -435,6 +436,7 @@ export default function App() {
 					<Typography>Copyright @ OPNCORP2022. All Rights Reserved.</Typography>
 				</Box>
 			</Container> */}
-		</Wrapper>
+			</Wrapper>
+		</HelmetProvider>
 	);
 }

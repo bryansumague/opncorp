@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom/client';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 
-import { HelmetProvider } from 'react-helmet-async';
-
 import App from './App';
 import theme from './theme';
 
@@ -28,9 +26,7 @@ root.render(
 
 			<CssBaseline />
 
-			<HelmetProvider>
-				<App />
-			</HelmetProvider>
+			<App />
 		</ThemeProvider>
 	</React.StrictMode>
 );
