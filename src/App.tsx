@@ -92,7 +92,10 @@ export default function App() {
 					name='opncorp:image'
 					content='https://singular-mermaid-a77676.netlify.app/'
 				/>
-				<meta name='description' content='OPNCORP' />
+				<meta
+					name='description'
+					content='We enable solution providers to establish a milestone payment system. This means that you as the customer always know what you are paying for and the money is only released to the solution provider when you approve the work'
+				/>
 
 				<meta name='opncorp:creator' content='@opncorp' />
 				<meta name='opncorp:site' content='@opncorp' />
