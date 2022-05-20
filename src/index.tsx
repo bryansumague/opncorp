@@ -2,6 +2,9 @@ import * as React from 'react';
 import ReactDOM from 'react-dom/client';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
+
+import { HelmetProvider } from 'react-helmet-async';
+
 import App from './App';
 import theme from './theme';
 
@@ -22,8 +25,12 @@ root.render(
 	<React.StrictMode>
 		<ThemeProvider theme={theme}>
 			{/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+
 			<CssBaseline />
-			<App />
+
+			<HelmetProvider>
+				<App />
+			</HelmetProvider>
 		</ThemeProvider>
-		</React.StrictMode>
+	</React.StrictMode>
 );

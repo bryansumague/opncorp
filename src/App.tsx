@@ -11,6 +11,7 @@ import FeaturesBox from './common/Features';
 import Footer from './common/Footer';
 import { Box, styled } from '@mui/material';
 import NavElement from './common/NavElement';
+import { Helmet } from 'react-helmet-async';
 
 const Wrapper = styled('div')(({ theme }) => ({
 	width: '100%',
@@ -82,6 +83,18 @@ export default function App() {
 
 	return (
 		<Wrapper>
+			<Helmet>
+				<title>OPNCORP</title>
+				<meta name='opncorp:card' content='summary_large_image' />
+				<meta
+					name='opncorp:image'
+					content='https://singular-mermaid-a77676.netlify.app/'
+				/>
+				<meta name='description' content='OPNCORP' />
+
+				<meta name='opncorp:creator' content='@opncorp' />
+				<meta name='opncorp:site' content='@opncorp' />
+			</Helmet>
 			<Navbar isVisibility={isVisible} />
 			{isVisible ? <NavElement /> : ''}
 			<WrapperMainSection1>
