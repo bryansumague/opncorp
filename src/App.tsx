@@ -84,7 +84,9 @@ export default function App() {
 	return (
 		<Wrapper>
 			<Helmet>
-				<title>OPNCORP</title>
+				<title>
+					OpnCorp+Code - Learn to design and code React and Swift apps
+				</title>
 				<meta name='opncorp:card' content='summary_large_image' />
 				<meta
 					name='opncorp:image'
