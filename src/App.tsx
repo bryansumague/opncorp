@@ -12,6 +12,7 @@ import Footer from './common/Footer';
 import { Box, styled } from '@mui/material';
 import NavElement from './common/NavElement';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { getUsers } from './app/api';
 
 const Wrapper = styled('div')(({ theme }) => ({
 	width: '100%',
@@ -79,6 +80,20 @@ export default function App() {
 			setVisible(entryPoint.isIntersecting);
 		});
 		observer.observe(myRef.current);
+	}, []);
+
+	React.useEffect(() => {
+		let mount;
+		async function fetchData() {
+			mount = true;
+			const res = await getUsers();
+			console.log(res);
+		}
+		fetchData();
+
+		return () => {
+			mount = false;
+		};
 	}, []);
 
 	return (
