@@ -13,6 +13,7 @@ import { Box, styled } from '@mui/material';
 import NavElement from './common/NavElement';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { getUsers } from './app/api';
+import axios from 'axios';
 
 const Wrapper = styled('div')(({ theme }) => ({
 	width: '100%',
@@ -86,10 +87,18 @@ export default function App() {
 		let mount;
 		async function fetchData() {
 			mount = true;
-			const res = await fetch('/api/users');
+			// const res = await fetch('/users');
 
-			const data = await res.json();
-			console.log(data);
+			// const data = await res.json();
+			// console.log(data);
+
+			const rest = axios
+				.get('http://api-ocm.southeastasia.cloudapp.azure.com:1337/api/users')
+				.then((response: any) => {
+					console.log(response);
+				});
+
+			console.log(rest);
 		}
 		fetchData();
 
