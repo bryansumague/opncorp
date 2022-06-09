@@ -41,6 +41,5 @@
 	},
 	"devDependencies": {
 		"react-helmet-async": "^1.3.0"
-	},
-	"proxy": "http://api-ocm.southeastasia.cloudapp.azure.com:1337/api"
+	}
 }
