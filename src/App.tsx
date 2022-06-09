@@ -86,8 +86,12 @@ export default function App() {
 		let mount;
 		async function fetchData() {
 			mount = true;
-			const res = await getUsers();
-			console.log(res);
+			const res = await fetch(
+				'http://api-ocm.southeastasia.cloudapp.azure.com:1337/api/users'
+			);
+
+			const data = await res.json();
+			console.log(data);
 		}
 		fetchData();
 
