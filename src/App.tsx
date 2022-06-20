@@ -94,9 +94,9 @@ export default function App() {
 
 			const rest = axios
 				.get('http://api-ocm.southeastasia.cloudapp.azure.com:1337/api/users')
-				.then((response: any) => {
-					console.log(response);
-				});
+				.then((response: any) => 
+				response
+				);
 
 			console.log(rest);
 		}
